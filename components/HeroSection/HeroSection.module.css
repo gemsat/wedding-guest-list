@@ -1,0 +1,59 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/wedding-hero.jpg") center/cover no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 1rem;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+}
+
+.title {
+  font-size: 2rem; /* ✅ mobile-friendly */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.date {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* -------- Larger Screens (tablet & desktop) -------- */
+@media (min-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+}
