@@ -1,7 +1,7 @@
 import styles from "./HeroSection.module.css";
-import Button from "../Button/Button";
+import { Button } from "../Button/Button";
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>

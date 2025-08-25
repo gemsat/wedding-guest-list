@@ -6,7 +6,7 @@ interface ButtonProps {
   children: React.ReactNode;
 }
 
-export default function Button({ href, children }: ButtonProps) {
+export function Button({ href, children }: ButtonProps) {
   return (
     <Link href={href} className={styles.button}>
       {children}
